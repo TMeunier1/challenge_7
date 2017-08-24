@@ -1,3 +1,379 @@
-header {
-    background-image: url("../external/img/intro5.jpg");
+$darkblue: #34495E;
+$lightgrey: #c2c2c2;
+$bgGrey: #ecf0f1;
+$green: #1abc9c;
+$blue: #3498db;
+$paddingButton: 1em 2em;
+$radius: 5px;
+
+h2 {
+    font-size: 5em;
+}
+h3 {
+    font-size: 3em;
+}
+p {
+    margin: 2em auto;
+}
+.subtitle {
+    color: $lightgrey;
+}
+.bgGrey {
+    background-color: $bgGrey;
+}
+.greenButton, .greenButton:hover, .greenButton:visited, .blueButton, .blueButton:hover, .blueButton:visited {
+    color: white;
+    padding: $paddingButton;
+    border-radius: $radius;
+    text-decoration: none;
+    background-color: $green;
+}
+.blueButton {
+    background-color: $blue!important;
+}
+.iphoneipad:hover {
+    cursor: url("../external/img/cross.png") 64 64,auto;
+}
+.divPicture {
+    text-align: center;
+    img {
+        width: 80%;
+    }
+}
+.thanks {
+    font-size: 2em;
+    margin: 0 0 2em;
+    text-align: center;
+    padding: 0;
+}
+
+#longthanks {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+body {
+    width: 100%;
+    .container {
+        padding: 0;
+        width: 100%;
+        #intro {
+            background-image: url("../external/img/intro5.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            text-align: center;
+            color: #f7f7f7;
+            div {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: normal;
+                margin-top: 10%;
+                h1 {
+                    font-size: 7em;
+                }
+                p {
+                    font-size: 2em;
+                    margin-bottom: 1em;
+                }
+                a, a:hover, a:visited {
+                    color: white;
+                    text-decoration: none;
+                    border-radius: $radius;
+                    padding: $paddingButton;
+                }
+                #twitter {
+                    background-color: #498FBD;
+                }
+                #download {
+                    border: 1px solid white;
+                }
+            }
+            img {
+                margin-top: 7%;
+            }
+        }
+        nav {
+            padding: auto;
+            height: 5em;
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+            div {
+                height: inherit;
+            }
+            ul {
+                height: inherit;
+                display: flex;
+                padding: auto;
+                align-items: center;
+                justify-content: center;
+                max-width: 50%;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 auto;
+                    align-self: center;
+                    a, a:hover, a:visited {
+                        text-decoration: none;
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+        main {
+            h2 {
+                text-align: center;
+            }
+            section {
+                padding: 4em;
+                color: #415568;
+            }
+            #secOne {
+                margin: 0 auto;
+                width: 80%;
+                color: $darkblue;
+                text-align: center;
+                img:hover {
+                    transition: 2s;
+                    transform: rotate(360deg);
+                }
+            }
+            #secTwo {
+                h3 {
+                    color: $darkblue;
+                }
+                img {
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+            #secThree {
+                .owl-carousel, .owl-stage-outer {
+                    height: 55em;
+                }
+
+                .owl-dots {
+                    .owl-dot {
+                        display: inline-block;
+                        margin: 0.5em;
+                        span {
+                            background-color: #8ddece;
+                            width: 1em;
+                            height: 1em;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+                    }
+                    .active {
+                        span {
+                            background-color: $green;
+                        }
+                    }
+                }
+            }
+            #secFour {
+                ul {
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+            #secSix {
+                background: $darkblue;
+                color: white;
+                text-align: center;
+                a, a:hover, a:visited {
+                    font-size: 2em;
+                    color: white;
+                    background: $green;
+                    padding: $paddingButton;
+                    border-radius: $radius;
+                }
+            }
+            #secSeven {
+                .icons {
+                    text-align: right;
+                    i {
+                        padding: 0.5em;
+                        font-size: 4em;
+                        background-color: #f0f1ec;
+                        border-radius: 50%;
+                        text-align: right;
+                    }
+                    i:hover {
+                        transition: 2s;
+                        transform: rotate(360deg);
+                    }
+                }
+                h3 {
+                    display: inline-block;
+                    padding: 0;
+                }
+                p {
+                    padding: 0;
+                }
+            }
+            #secEight {
+                background-image: url("../external/img/banner-bg.jpg");
+                background-position: center;
+                text-align: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                h2 {
+                    margin: 2em auto 1em;
+                }
+                a, a:hover, a:visited {
+                    padding: $paddingButton;
+                    background-color: $darkblue;
+                    margin: auto;
+                    color: white;
+                    font-size: 2em;
+                    border-radius: $radius;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin-bottom: 3em;
+                }
+            }
+            #secNine {
+                background: #f8f8f8;
+                #form {
+                    width: 60%;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        list-style: none;
+                    }
+                }
+                a, a:visited, a:hover {
+                    color: $darkblue;
+                    i {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: $bgGrey;
+            .col-md-3 {
+                ul {
+                    li {
+                        list-style: none;
+                        margin: 0.5em auto;
+                    }
+                }
+                background-color: $darkblue;
+                color: white;
+                a, a:hover, a:visited {
+                    color: white;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+            .col-md-7 {
+                color: $lightgrey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        .container {
+            #intro {
+                img {
+                    margin-top: 20%;
+                }
+            }
+            nav {
+                h3 {
+                    text-align: center;
+                    margin:0;
+                }
+                ul {
+                    padding: 0;
+                    display: block;
+                    margin: 1em auto;
+                    li {
+                        text-align: center;
+                        display: block;
+                    }
+                }
+            }
+            main {
+                #secOne {
+                    margin-top: 4em;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                #secTwo, #secThree {
+                    text-align: center;
+                    .greenButton {
+                        display: block;
+                        margin-bottom: 1em;
+                    }
+                    .blueButton {
+                        display: block;
+                        margin-bottom: 1em;
+                    }
+                }
+                #secThree {
+                    .owl-carousel, .owl-stage-outer {
+                        height: 15em;
+                    }
+                    h3 {
+                        margin-top: 1em;
+                    }
+                }
+                #secFour {
+                    text-align: center;
+                    ul {
+                        padding: 0;
+                        margin: 1em auto;
+                        text-align: left;
+                    }
+                }
+                #secFive {
+                    #thirdDivPicture {
+                        margin-top: 1em;
+                        margin-left: 25%;
+                    }
+                }
+                #secSix {
+                    a, a:visited, a:hover {
+                        font-size: 1em;
+                    }
+                }
+                #secSeven {
+                    h3 {
+                        margin: 0;
+                    }
+                    .icons {
+                        i {
+                            margin: 0;
+                            font-size: 2em;
+                        }
+                    }
+                }
+                #secEight {
+                    h2 {
+                        font-size: 3em;
+                    }
+                    a, a:visited, a:hover {
+                        font-size: 1em;
+                    }
+                }
+                #secNine {
+                    text-align: center;
+                    #form {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
